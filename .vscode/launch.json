@@ -7,7 +7,7 @@
         {
             "name": "aroop",
             "request": "launch",
-            "program": "lib/main.dart",
+            "program": "lib/splashscreen.dart",
             "type": "dart"
         }
     ]

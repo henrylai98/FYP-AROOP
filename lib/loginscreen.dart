@@ -44,11 +44,11 @@ class _LoginScreenState extends State<LoginScreen> {
                                   style: _signUpActive
                                       ? TextStyle(
                                           fontSize: 22,
-                                          color: Theme.of(context).accentColor,
+                                          color: Colors.black,
                                           fontWeight: FontWeight.bold)
                                       : TextStyle(
                                           fontSize: 16,
-                                          color: Theme.of(context).accentColor,
+                                          color: Colors.black,
                                           fontWeight: FontWeight.normal)),
                             ),
                             OutlineButton(
@@ -60,11 +60,11 @@ class _LoginScreenState extends State<LoginScreen> {
                                   style: _signInActive
                                       ? TextStyle(
                                           fontSize: 30,
-                                          color: Theme.of(context).accentColor,
+                                          color: Colors.black,
                                           fontWeight: FontWeight.bold)
                                       : TextStyle(
                                           fontSize: 24,
-                                          color: Theme.of(context).accentColor,
+                                          color: Colors.black,
                                           fontWeight: FontWeight.normal)),
                             ),
                           ]),
@@ -147,7 +147,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                     child: Text('Forgot Password?',
                                         style: TextStyle(
                                             fontSize: 16,
-                                            color: Colors.brown[50]))),
+                                            color: Colors.black))),
                               ]),
                             ),
                             SizedBox(height: 30),

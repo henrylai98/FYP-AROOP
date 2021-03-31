@@ -49,11 +49,11 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                   style: _signUpActive
                                       ? TextStyle(
                                           fontSize: 30,
-                                          color: Theme.of(context).accentColor,
+                                          color: Colors.black,
                                           fontWeight: FontWeight.bold)
                                       : TextStyle(
                                           fontSize: 24,
-                                          color: Theme.of(context).accentColor,
+                                          color: Colors.black,
                                           fontWeight: FontWeight.normal)),
                             ),
                             OutlineButton(
@@ -65,11 +65,11 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                   style: _signInActive
                                       ? TextStyle(
                                           fontSize: 22,
-                                          color: Theme.of(context).accentColor,
+                                          color: Colors.black,
                                           fontWeight: FontWeight.bold)
                                       : TextStyle(
                                           fontSize: 16,
-                                          color: Theme.of(context).accentColor,
+                                          color: Colors.black,
                                           fontWeight: FontWeight.normal)),
                             ),
                           ]),

@@ -11,10 +11,12 @@ import 'loginscreen.dart';
 
 class MainScreen extends StatefulWidget {
   final User user;
+  final marks;
 
   const MainScreen({
     Key key,
     this.user,
+    this.marks
   }) : super(key: key);
   @override
   _MainScreenState createState() => _MainScreenState();

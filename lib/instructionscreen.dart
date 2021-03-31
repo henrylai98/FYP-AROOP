@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 import 'user.dart';
-import 'package:progress_dialog/progress_dialog.dart';
-import 'dart:convert';
-import 'package:http/http.dart' as http;
 import 'quizscreen.dart';
-import 'question.dart';
 import 'mainscreen.dart';
 
 class QuizInstructionScreen extends StatefulWidget {
@@ -40,9 +36,11 @@ class _QuizInstructionScreenState extends State<QuizInstructionScreen> {
                         child: Padding(
                             padding: EdgeInsets.all(10),
                             child: Text(
-                                "This quiz contains 10 MCQ questions. You are given 15 minutes to answer the quiz. If the time taken is exceeded, extra time will be given, however,marks, marks will be deducted one per3 minutes. After you have answered all the questions, you can tap on 'grade' to grade the quiz. The awards will be displayed in the result page. If you are clear with the instruction, choose the level of difficulty  tap on 'Start',time will started to count down. Good Luck!",
+                                "This quiz contains 10 MCQ questions. You are given 15 minutes to answer the quiz. If the time taken is exceeded, extra time will be given, however, marks will be deducted by one for every 3 minutes. After you have answered all the questions, you can tap on 'grade' to grade the quiz. The awards will be displayed in the result page. If you are clear with the instruction, choose the level of difficulty  tap on 'Start',time will started to count down. Good Luck!",
                                 style: TextStyle(fontSize: 20))))),
-                SizedBox(height: 30),
+                SizedBox(height: 15),
+                Container(child:Text("Select level of Difficulty")),
+                SizedBox(height: 5),
                 Container(
                     height: 30,
                     decoration: BoxDecoration(
@@ -55,10 +53,7 @@ class _QuizInstructionScreenState extends State<QuizInstructionScreen> {
                     ),
                     child: DropdownButton(
                       //sorting dropdownoption
-                      hint: Text(
-                        'Select Location',
-                        style: TextStyle(fontSize: 20),
-                      ), // Not necessary for Option 1
+                      // Not necessary for Option 1
                       value: selectedLevel,
                       onChanged: (newValue) {
                         setState(() {
